@@ -21,7 +21,6 @@ const Ui = (Data) => {
 
 document.addEventListener('click', async function (e) {
   if (e.target.classList.contains('modal-detail-button')) {
-    console.log('lol ')
     const im = e.target.dataset.imdbid
     const movi = await getmovie(im)
     update(movi)
